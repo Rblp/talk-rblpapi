@@ -14,26 +14,6 @@ classoption: compress
 ---
 
 # History
-
-\framesubtitle{R[Name redacted], findata.org, Rblpapi}
-
-Over multiple slides:
-
-- Screenshot / title of 2004 talk 
-
-- Screenshot / title of findata.org
-
-- Screenshot of \url{http://www.bloomberglabs.com/api} and/or \texttt{.../documentation/}
-
-- Mention passage C to Java to C++
-
-- APIs now 1st-class citizens, multiple languages + OSs
-
-- Mention (ambitious) plans by Bbg to have the API to be ``generic'' for
-multiple backends, publishing
-
-
-# History
 \framesubtitle{An early talk on basic R package using the C API}
 
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/RLimBbgTalk2004.png}}
@@ -51,17 +31,17 @@ multiple backends, publishing
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/bloomberglabscom.png}}
 
 
-# Present -- and Future?
-\framesubtitle{A new start}
+# Present 
+\framesubtitle{And Future?}
 
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/RblpapiGithub.png}}
 
 
 # Third Time Lucky
 
-Rewrite with
+The new rewrite is different:
 
-- Removing Java
+- No longer uses or requires Java
 
 - Lighter, simpler, leveraging Rcpp
 
