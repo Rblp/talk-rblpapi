@@ -1,7 +1,7 @@
 ---
 title: "Rblpapi"
 author: "Whit Armstrong \\and Dirk Eddelbuettel \\and John Laing"
-date: "May 29-30, 2015\\newline R/Finance 2015"
+date: "May 29 - 30, 2015\\newline R/Finance 2015"
 output:
   beamer_presentation:
     includes:
@@ -14,13 +14,13 @@ classoption: compress
 ---
 
 # History
-\framesubtitle{An early talk on basic R package using the C API}
+\framesubtitle{An early talk on a basic R package using the C API: Work by Dirk}
 
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/RLimBbgTalk2004.png}}
 
 
 # History
-\framesubtitle{The key package emerged using the Java API}
+\framesubtitle{The key package emerged using the Java API: First Ana, then John}
 
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/findataorg.png}}
 
@@ -31,32 +31,57 @@ classoption: compress
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/bloomberglabscom.png}}
 
 
-# Present 
-\framesubtitle{And Future?}
+# Present .. and Future
+\framesubtitle{Whit, Dirk and John}
 
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/RblpapiGithub.png}}
 
 
 # Third Time Lucky
+\framesubtitle{The Rblpapi package}
 
 The new rewrite is different:
 
 - No longer uses or requires Java
 
-- Lighter, simpler, leveraging Rcpp
+- Lighter, simpler, leveraging power of Rcpp
 
-- Easy (??) to add simple data getters
+- Easy to add simple data getters
+
+
+# Status
+\framesubtitle{The Rblpapi package}
+
+Where we are at now:
+
+- Feature-complete (?), robust, fast
+
+- (Basic) documentation for everything
+
+- Travis CI integration
+
+- On GitHub and in the [ghrr](http://ghrr.github.io/drat) repository
 
 # Examples
+\framesubtitle{\textsl{I want to like Mike}}
 
-## TBD
+## Core Functions known from other API accessors 
++ `bdp`
++ `bds`
++ `bdh`
++ `getBars`
++ `fieldSearch`
 
 # Open Issues
+\framesubtitle{The Rblpapi package}
 
-- DataFrame class caused trouble
+- DataFrame class caused trouble, need something new
 
 - Fixed-dimension retrieval very easy
 
-- Builds on ``that other OS''
+- Builds on ``that other OS'' impossible while (vendor) API library built with VC++ 
 
-- Distribution?  Need library stub or \texttt{dlopen} tricks to be buildable
+- Distribution?  Needs library stub or \texttt{dlopen} tricks
+
+- Travis CI:  Uses script to download + install library for tests
+
