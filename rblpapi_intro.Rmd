@@ -1,12 +1,11 @@
 ---
 title: "Rblpapi"
 author: "Whit Armstrong \\and Dirk Eddelbuettel \\and John Laing"
-date: "May 29 - 30, 2015\\newline R/Finance 2015"
+date: "Lightning Presentation \\newline R/Finance 2015 \\newline May 29 - 30, 2015"
 output:
   beamer_presentation:
     includes:
       in_header: header.tex
-    keep_tex: yes
     theme: Warsaw
 fontsize: 12pt
 subtitle: An interface to the shall-not-be-named service
@@ -44,9 +43,9 @@ The new rewrite is different:
 
 - No longer uses or requires Java
 
-- Lighter, simpler, leveraging power of Rcpp
+- Lighter, simpler, leveraging [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html)
 
-- Easy to add simple data getters
+- Even easier to add C++ functionality
 
 
 # Status
@@ -88,4 +87,13 @@ Where we are at now:
 - Distribution?  Needs library stub or \texttt{dlopen} tricks
 
 - Travis CI:  Uses script to download + install library for tests
+
+# Summary
+\framesubtitle{The Rblpapi package}
+
++ Bloomberg provides a first-rate API and infrastructure 
++ So the R Community \textsl{will} come up with good packages
++ Language/OS choice matter: some vendors still "different"
++ We prefer Open Source; package cannot go on CRAN as is
++ But we have alternatives in [GitHub-hosted repositories](http://ghrr.github.io/drat)
 
