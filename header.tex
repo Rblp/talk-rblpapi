@@ -12,6 +12,7 @@
 %% ok
 %\renewcommand{\itemBullet}{\textbullet}
 \renewcommand{\itemBullet}{$\cdot$}
+%\renewcommand{\itemBullet}{▸}   % unicode U+25b8 'black right pointing small triangle'
 
 % Insert frame with section title at every section start
 \AtBeginSection[]
@@ -27,3 +28,11 @@
   \endgroup
   \fi%
 }
+
+
+%% ,usetitleprogressbar,nosmallcapitals,nooffset,usetotalslideindicator
+\makeatletter
+% \@useTitleProgressBartrue
+\@noSmallCapitalstrue
+\@useTotalSlideIndicatortrue
+\setlength{\@mtheme@voffset}{0em}

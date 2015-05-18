@@ -6,6 +6,7 @@ output:
   beamer_presentation:
     includes:
       in_header: header.tex
+    keep_tex: yes
     theme: m
     pandoc_args: '--latex-engine=xelatex'
 fontsize: 12pt
