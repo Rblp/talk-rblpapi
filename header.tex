@@ -2,9 +2,28 @@
 \definecolor{links}{HTML}{2A1B81}
 \hypersetup{colorlinks,linkcolor=,urlcolor=links}
 
-\AtBeginSection[] {
-  \begin{frame}
-    \frametitle{Outline}
-    \tableofcontents[currentsection,hideallsubsections]%
+% \AtBeginSection[] {
+%   \begin{frame}
+%     \frametitle{Outline}
+%     \tableofcontents[currentsection,hideallsubsections]%
+%   \end{frame}
+% }
+
+%% ok
+%\renewcommand{\itemBullet}{\textbullet}
+\renewcommand{\itemBullet}{$\cdot$}
+
+% Insert frame with section title at every section start
+\AtBeginSection[]
+{
+  \if@noSectionSlide%
+  \else%
+  \begingroup
+  \setbeamercolor{background canvas}{parent=palette primary}
+  \begin{frame}[plain]
+    \vspace{2em}\usebeamerfont{section title}
+    \progressbar@sectionprogressbar%
   \end{frame}
+  \endgroup
+  \fi%
 }

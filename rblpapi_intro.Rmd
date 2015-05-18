@@ -1,99 +1,98 @@
 ---
 title: "Rblpapi"
 author: "Whit Armstrong \\and Dirk Eddelbuettel \\and John Laing"
-date: "Lightning Presentation \\newline R/Finance 2015 \\newline May 29 - 30, 2015"
+date: "Lightning Presentation \\newline \\textsl{R/Finance 2015} \\newline May 30, 2015"
 output:
   beamer_presentation:
     includes:
       in_header: header.tex
-    theme: Warsaw
+    theme: m
+    pandoc_args: '--latex-engine=xelatex'
 fontsize: 12pt
 subtitle: An interface to the shall-not-be-named service
 classoption: compress
 ---
 
-# History
-\framesubtitle{An early talk on a basic R package using the C API: Work by Dirk}
+# History: Basic package using the C (Dirk)
 
-\centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/RLimBbgTalk2004.png}}
+\centering{\includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{images/RLimBbgTalk2004.png}}
 
 
-# History
-\framesubtitle{The key package emerged using the Java API: First Ana, then John}
+# History: Key package using Java (Ana, then John)
 
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/findataorg.png}}
 
 
-# History
-\framesubtitle{But the vendor API keeps improving}
+# History: But the vendor API keeps improving
 
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/bloomberglabscom.png}}
 
 
-# Present .. and Future
-\framesubtitle{Whit, Dirk and John}
+# Present .. and Future (Whit, Dirk, and John)
 
 \centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/RblpapiGithub.png}}
 
 
-# Third Time Lucky
-\framesubtitle{The Rblpapi package}
+# Third Time Lucky: The Rblpapi package
 
 The new rewrite is different:
 
-- No longer uses or requires Java
+. . .
 
-- Lighter, simpler, leveraging [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html)
+> - No longer uses or requires Java
+> - Lighter, simpler, leveraging [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html)
+> - Even easier to add C++ functionality
 
-- Even easier to add C++ functionality
 
-
-# Status
-\framesubtitle{The Rblpapi package}
+# Status: The Rblpapi package
 
 Where we are at now:
 
-- Feature-complete (?), robust, fast
+. . .
 
-- (Basic) documentation for everything
+> - Feature-complete (?), robust, fast
+> - (Basic) documentation for everything
+> - Travis CI integration
+> - On GitHub and in the [ghrr](http://ghrr.github.io/drat) repository
 
-- Travis CI integration
-
-- On GitHub and in the [ghrr](http://ghrr.github.io/drat) repository
 
 # Examples
-\framesubtitle{\textsl{I want to like Mike}}
 
-\small
+Core Functions known from other API accessors:
 
-## Core Functions known from other API accessors 
-+ `bdp(c("ESA Index", "SPY US Equity"), c("PX_LAST", "VOLUME"))`
-+ `bds("GOOG US Equity", "TOP_20_HOLDERS_PUBLIC_FILINGS")`
-+ `bdh("SPY US Equity", c("PX_LAST", "VOLUME"), start.date=Sys.Date()-31)`
-+ `getBars("ESA Index", startTime=ISOdatetime(2015,1,1,0,0,0))`
-+ `getTicks("ESA Index", "TRADE", Sys.time()-60*60))`
-+ `fieldSearch("VWAP")`
+. . .
+
+\scriptsize
+
+> + `bdp(c("ESA Index", "SPY US Equity"), c("PX_LAST", "VOLUME"))`
+> + `bds("GOOG US Equity", "TOP_20_HOLDERS_PUBLIC_FILINGS")`
+> + `bdh("SPY US Equity", c("PX_LAST", "VOLUME"), start.date=Sys.Date()-31)`
+> + `getBars("ESA Index", startTime=ISOdatetime(2015,1,1,0,0,0))`
+> + `getTicks("ESA Index", "TRADE", Sys.time()-60*60))`
+> + `fieldSearch("VWAP")`
 
 
-# Open Issues
-\framesubtitle{The Rblpapi package}
+# Current Status of the Rblpapi package
 
-- DataFrame class caused trouble, need something new
+Things we addressed / need to address:
 
-- Fixed-dimension retrieval very easy
+. . .
 
-- Builds on ``that other OS'' impossible while (vendor) API library built with VC++ 
+> - DataFrame class caused trouble, need something new
+> - Fixed-dimension retrieval very easy
+> - Builds on ``that other OS'' impossible while (vendor) API library built with VC++ 
+> - Now include shared library with \texttt{rpath}-encoded path
+> - Build "everywhere" including on Travis CI
 
-- Distribution?  Needs library stub or \texttt{dlopen} tricks
+# Summary: The Rblpapi package
 
-- Travis CI:  Uses script to download + install library for tests
+Concluding:
 
-# Summary
-\framesubtitle{The Rblpapi package}
+. . .
 
-+ Bloomberg provides a first-rate API and infrastructure 
-+ So the R Community \textsl{will} come up with good packages
-+ Language/OS choice matter: some vendors still "different"
-+ We prefer Open Source; package cannot go on CRAN as is
-+ But we have alternatives in [GitHub-hosted repositories](http://ghrr.github.io/drat)
+> + Bloomberg provides a first-rate API and infrastructure 
+> + So the R Community came up with good packages
+> + Language/OS choice matter: some vendors still "different"
+> + We prefer Open Source; package may not go on CRAN as is
+> + But we have alternatives in [GitHub-hosted repositories](http://ghrr.github.io/drat)
 
