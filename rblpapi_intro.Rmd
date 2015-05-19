@@ -21,17 +21,17 @@ classoption: compress
 
 # History: Key package using Java (Ana, then John)
 
-\centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/findataorg.png}}
+\centering{\includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{images/findataorg.png}}
 
 
 # History: But the vendor API keeps improving
 
-\centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/bloomberglabscom.png}}
+\centering{\includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{images/bloomberglabscom.png}}
 
 
 # Present .. and Future (Whit, Dirk, and John)
 
-\centering{\includegraphics[width=\textwidth,height=0.825\textheight,keepaspectratio]{images/RblpapiGithub.png}}
+\centering{\includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{images/RblpapiGithub.png}}
 
 
 # Third Time Lucky: The Rblpapi package
