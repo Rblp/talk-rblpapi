@@ -4,14 +4,12 @@ author: "Whit Armstrong \\and Dirk Eddelbuettel \\and John Laing"
 date: "Lightning Presentation \\newline \\textsl{R/Finance 2015} \\newline May 30, 2015"
 output:
   beamer_presentation:
-    includes:
-      in_header: header.tex
     keep_tex: yes
-    theme: m
-    pandoc_args: '--latex-engine=xelatex'
+    theme: m2
+    latex_engine: xelatex
 fontsize: 12pt
 subtitle: An interface to the shall-not-be-named service
-classoption: compress
+classoption: compress,nosmallcapitals,usetotalslideindicator,nooffset
 ---
 
 # History: Basic package using the C (Dirk)
