@@ -38,9 +38,9 @@ The new rewrite is different:
 
 . . .
 
-> - No longer uses or requires Java
-> - Lighter, simpler, leveraging [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html)
-> - Even easier to add C++ functionality
+> - Lighter -- no longer uses or requires Java
+> - Simpler -- leverages [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html)
+> - More flexible -- easy to add new functionality with C++
 
 
 # Status: The Rblpapi package
@@ -49,10 +49,11 @@ Where we are at now:
 
 . . .
 
-> - Feature-complete (?), robust, fast
+> - Robust and fast
+> - Implements most widely-used features
 > - (Basic) documentation for everything
 > - Travis CI integration
-> - On GitHub and in the [ghrr](http://ghrr.github.io/drat) repository
+> - On [GitHub](https://github.com/armstrtw/Rblpapi) and in the [ghrr](http://ghrr.github.io/drat) repository
 
 
 # Examples
@@ -73,15 +74,26 @@ Core Functions known from other API accessors:
 
 # Current Status of the Rblpapi package
 
-Things we addressed / need to address:
+Things we addressed
+
+. . .
+
+> - Fixed-dimension retrieval very easy
+> - Now include shared library with \texttt{rpath}-encoded path
+> - Build "everywhere" including on Travis CI
+
+
+# Current Status of the Rblpapi package
+
+Things we need to address:
 
 . . .
 
 > - DataFrame class caused trouble, need something new
-> - Fixed-dimension retrieval very easy
-> - Builds on ``that other OS'' impossible while (vendor) API library built with VC++ 
-> - Now include shared library with \texttt{rpath}-encoded path
-> - Build "everywhere" including on Travis CI
+> - Builds on ``that other OS'' very difficult while (vendor) API library built with VC++ 
+> - More features: subscriptions, screens, portfolios...
+>     - Pull requests welcome!
+
 
 # Summary: The Rblpapi package
 
