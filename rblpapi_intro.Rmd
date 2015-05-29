@@ -92,7 +92,7 @@ Things we need to address:
 > - DataFrame class caused trouble, need something new
 > - Builds on ``that other OS'' very difficult while (vendor) API library built with VC++ 
 > - More features: subscriptions, screens, portfolios...
->     - Pull requests welcome!
+> - Pull requests welcome!
 
 
 # Summary: The Rblpapi package
@@ -107,3 +107,16 @@ Concluding:
 > + We prefer Open Source; package may not go on CRAN as is
 > + But we have alternatives in [GitHub-hosted repositories](http://ghrr.github.io/drat)
 
+
+----
+
+\scriptsize
+Made using
+
+- TeXlive 20141024
+- Beamer with [mtheme](http://github.com/matze/mtheme)
+- Pandoc 1.12.4.2 
+- R 3.2.0
+- rmarkdown 0.6.2.2
+- Emacs 24.4 
+- Ubuntu 15.04
