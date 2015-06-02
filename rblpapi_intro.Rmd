@@ -7,6 +7,7 @@ output:
     keep_tex: yes
     theme: m2
     latex_engine: xelatex
+    incremental: yes
 fontsize: 12pt
 subtitle: An interface to the shall-not-be-named service
 classoption: compress,nosmallcapitals,usetotalslideindicator,nooffset
@@ -108,15 +109,27 @@ Concluding:
 > + But we have alternatives in [GitHub-hosted repositories](http://ghrr.github.io/drat)
 
 
-----
+<!-- --- -->
 
-\scriptsize
-Made using
+<!-- One more thing. -->
 
-- TeXlive 20141024
-- Beamer with [mtheme](http://github.com/matze/mtheme)
-- Pandoc 1.12.4.2 
-- R 3.2.0
-- rmarkdown 0.6.2.2
-- Emacs 24.4 
-- Ubuntu 15.04
+
+<!-- # Come and talk to us -->
+
+<!-- \begin{center} -->
+<!-- \includegraphics[width=4.25in]{images/ketchum_logo.jpeg} -->
+<!-- \end{center} -->
+
+
+<!-- ---- -->
+
+<!-- \scriptsize -->
+<!-- Made using -->
+
+<!-- > - TeXlive 20141024 -->
+<!-- > - Beamer with [mtheme](http://github.com/matze/mtheme) -->
+<!-- > - Pandoc 1.12.4.2  -->
+<!-- > - R 3.2.0 -->
+<!-- > - rmarkdown 0.6.2.2 -->
+<!-- > - Emacs 24.4  -->
+<!-- > - Ubuntu 15.04 -->
