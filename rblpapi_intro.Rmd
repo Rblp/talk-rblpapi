@@ -37,7 +37,7 @@ classoption: compress,nosmallcapitals,usetotalslideindicator,nooffset
 
 The new rewrite is different:
 
-. . .
+<!-- . . . -->
 
 > - Lighter -- no longer uses or requires Java
 > - Simpler -- leverages [Rcpp](http://dirk.eddelbuettel.com/code/rcpp.html)
@@ -48,7 +48,7 @@ The new rewrite is different:
 
 Where we are at now:
 
-. . .
+<!-- . . . -->
 
 > - Robust and fast
 > - Implements most widely-used features
@@ -61,7 +61,7 @@ Where we are at now:
 
 Core Functions known from other API accessors:
 
-. . .
+<!-- . . . -->
 
 \scriptsize
 
@@ -77,7 +77,7 @@ Core Functions known from other API accessors:
 
 Things we addressed
 
-. . .
+<!-- . . . -->
 
 > - Fixed-dimension retrieval very easy
 > - Now include shared library with \texttt{rpath}-encoded path
@@ -88,7 +88,7 @@ Things we addressed
 
 Things we need to address:
 
-. . .
+<!-- . . . -->
 
 > - DataFrame class caused trouble, need something new
 > - Builds on ``that other OS'' very difficult while (vendor) API library built with VC++ 
@@ -100,7 +100,7 @@ Things we need to address:
 
 Concluding:
 
-. . .
+<!-- . . . -->
 
 > + Bloomberg provides a first-rate API and infrastructure 
 > + So the R Community came up with good packages
