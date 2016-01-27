@@ -3,7 +3,7 @@
 
 Abstract submitted in consideration for _R/Finance 2016_
 
-Dirk Eddelbuettel, Whit Armstring, John Laing
+Dirk Eddelbuettel, Whit Armstrong, John Laing
 
 One year ago we presented Rblpapi. It connects the R environment to the
 Bloomberg system, data store, calculation engines and more by utilizing both
